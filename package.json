@@ -1,0 +1,27 @@
+{
+  "name": "Shopping-List",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server/server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CarterSchleif/Shopping-List.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/CarterSchleif/Shopping-List/issues"
+  },
+  "homepage": "https://github.com/CarterSchleif/Shopping-List#readme",
+  "dependencies": {
+    "angular": "^1.7.0",
+    "angular-route": "^1.7.0",
+    "body-parser": "^1.18.3",
+    "express": "^4.16.3"
+  }
+}
