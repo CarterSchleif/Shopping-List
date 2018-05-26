@@ -17,8 +17,16 @@
 
        <script type="text/javascript" src="scripts/client.js"></script>
 </head>
-<body>
-    <h1>Shopping List</h1>
-    
+<body ng-app="myApp">
+        <div id="headerDiv">
+                <header ng-include="'/views/partials/header.html'"></header>
+                <div ng-controller="NavController as vm">
+                <div ng-include="'views/partials/nav.html'"></div>
+              </div>
+          </div>
+                <main ng-view class="container">
+          
+                </main>
+
 </body>
 </html>
