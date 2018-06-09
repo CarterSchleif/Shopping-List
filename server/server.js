@@ -13,6 +13,9 @@ app.use(bodyParser.json()); // parses angular data
 app.use(express.static('./server/public'));
 
 
+const listRouter = require('./routers/lists-router');
+app.use('/lists', listRouter);
+
 
 /** Listen **/
 app.listen(port, function(){

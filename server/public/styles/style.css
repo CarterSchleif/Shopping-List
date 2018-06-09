@@ -5,3 +5,37 @@ body{
     background-color: rgb(235, 207, 170);
     padding: 0.5%;
 }
+.navbar {
+    background-color: rgb(235, 207, 170);
+    width: 100%;
+    border-radius: 0px;
+  
+  }
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+li {
+    float: left;
+}
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+
+}
+li a:hover {
+    text-decoration: underline;
+    color: rgb(0, 0, 0);
+}
+.design{
+    text-align: center;
+}
+.designHeader{
+    font-size: 2em;
+}
