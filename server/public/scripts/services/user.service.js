@@ -3,6 +3,8 @@ myApp.service('UserService', ['$http', '$location', function ($http, $location) 
     
     var self = this;
 
+    self.newList = {};
+
 
 
 
