@@ -1,9 +1,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<form>
+<form class="new">
+    <div>
     <div class="design">
-        <div class="designHeader">
-            <h1>+NewList</h1>
-        </div>
         <div>
              <md-input-container>
                  <label>Author</label>
@@ -19,5 +17,7 @@
                 <input type="text" ng-model="vm.newList.listItems">
              </md-input-container>
         </div>
+    </div>
+        <md-button class="addBtn" ng-click="vm.addList(vm.newList)">Add List</md-button>
     </div>
 </form>

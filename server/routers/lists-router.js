@@ -14,5 +14,17 @@ let ListSchema = new Schema({
 const List = mongoose.model('List', ListSchema, 'lists');
 
 
+router.post('/', (request, response) => {
+    let newList = new List(request.body);
+    console.log('List to save is', request.body);
+    newList.save((error, savedList) => {
+        if (error){
+            console.log('error on addList:', error);
+            response.sendStatus(500);
+        } else {
+            response.sendStatus(201);
+        }
+    })
+});
 
 module.exports = router;

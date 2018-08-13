@@ -4,6 +4,7 @@ myApp.controller('NewController', ['UserService', function(UserService) {
 
     self.UserService = UserService;
     self.newList = UserService.newList;
+    self.addList = UserService.addList;
 
 
 

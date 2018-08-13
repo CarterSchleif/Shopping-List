@@ -2,11 +2,10 @@ body{
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
 .header{
-    background-color: rgb(235, 207, 170);
+    text-align: center;
     padding: 0.5%;
 }
 .navbar {
-    background-color: rgb(235, 207, 170);
     width: 100%;
     border-radius: 0px;
   
@@ -18,18 +17,18 @@ body{
     overflow: hidden;
 }
 
-li {
-    float: left;
+.navButton {
+
 }
-li a {
+.navButton a {
     display: block;
-    color: white;
+    color: black;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
 
 }
-li a:hover {
+navButton a:hover {
     text-decoration: underline;
     color: rgb(0, 0, 0);
 }
@@ -38,4 +37,7 @@ li a:hover {
 }
 .designHeader{
     font-size: 2em;
+}
+.new {
+    text-align: center;
 }
