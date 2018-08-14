@@ -12,12 +12,16 @@
                 <input type="text" ng-model="vm.newList.listName">
              </md-input-container>
              <br>
-             <md-input-container>
+             <div ng-click="vm.showAddItem(list)">
+                <md-button class="createBtn" ng-hide="vm.listCreated" ng-click="vm.addList(vm.newList)">Create List</md-button>
+             </div>
+             <br>
+             <md-input-container ng-show="vm.listCreated" ng-click="vm.showAddItem(list)">
                 <label>New List Item</label>
                 <input type="text" ng-model="vm.newList.listItems">
              </md-input-container>
         </div>
     </div>
-        <md-button class="addBtn" ng-click="vm.addList(vm.newList)">Add List</md-button>
+        <md-button class="addBtn" ng-show="vm.listCreated" ng-click="vm.addListItem(vm.newList)">Add Item</md-button>
     </div>
 </form>

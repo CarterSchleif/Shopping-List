@@ -4,6 +4,7 @@ myApp.service('UserService', ['$http', '$location', function ($http, $location) 
     var self = this;
 
     self.newList = {};
+    self.newListItem = {};
 
 
     self.addList = function() {
@@ -22,6 +23,24 @@ myApp.service('UserService', ['$http', '$location', function ($http, $location) 
         });//End $http
     }//End self.addList
 
+    self.addListItem = (list) => {
+        const id = list._id
+        const updatedList = list;
+
+        console.log('on click self.addList', list);
+
+        $http({
+            method: 'PUT',
+            url: `/lists/${id}`,
+            data: updatedList,
+        }).then((response) => {
+            console.log('Added newList', response);
+            self.newListItem = {}; // Reset self.newListItem to empty object
+            
+        }).catch((error) => {
+            console.log('error in self.addList', error);
+        });//End $http
+    }//End self.addListItem
 
     
 }]);

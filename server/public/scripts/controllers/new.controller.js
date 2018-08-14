@@ -5,8 +5,15 @@ myApp.controller('NewController', ['UserService', function(UserService) {
     self.UserService = UserService;
     self.newList = UserService.newList;
     self.addList = UserService.addList;
+    self.addListItem = UserService.addListItem;
+    self.newListItem = UserService.newListItem;
+    self.listCreated;
 
 
+        //Show and Hide adding list items
+        self.showAddItem = (list) => {
+            self.listCreated = true;
+        }
 
     
 }]);
